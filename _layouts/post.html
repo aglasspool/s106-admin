@@ -5,9 +5,9 @@ layout: default
 
 <p>
   {{ page.date | date_to_string }}
-  {% assign scheme = site.schemes | where: 'short_name', page.scheme | first %}
+  {% assign scheme = site.schemes | where: 'name', page.scheme | first %}
   {% if scheme %}
-    - <a href="{{ scheme.url }}">{{ scheme.name }}</a>
+    - <a href="{{ scheme.url }}">{{ scheme.display_name }}</a>
   {% endif %}
 </p>
 
