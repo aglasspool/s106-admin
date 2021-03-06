@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,14 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>{{ site.title }}</title>
+    <title>S106 ADMIN</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>    
+    
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.baseurl }}/index_files/bootstrap.css" rel="stylesheet">
+    <link href="/index_files/bootstrap.css" rel="stylesheet">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -45,13 +43,13 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="{{ site.baseurl }}/index_files/dashboard.css" rel="stylesheet">
+    <link href="/index_files/dashboard.css" rel="stylesheet">
   <style type="text/css">/* Chart.js */
 @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
   <body>
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-	<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">{{ site.title }}</a>
+	<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">S106 ADMIN</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -158,27 +156,35 @@
 
 
       <h2>Section title</h2>
-      {{ content }}
+      <h1>Schemes</h1>
+
+<ul>
+  
+    <li>
+	    <h2><a href="/schemes/jill.html">Jill Smith</a></h2>
+      <h3>Chief Editor</h3>
+      <p><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+    </li>
+  
+    <li>
+	    <h2><a href="/schemes/ted.html">Ted Doe</a></h2>
+      <h3>Writer</h3>
+      <p><p>Ted has been eating fruit since he was baby.</p>
+</p>
+    </li>
+  
+</ul>
+
 
     </main>
   </div>
 </div>
 
 
-    <script src="{{ site.baseurl }}/index_files/bootstrap.js"></script>
+    <script src="/index_files/bootstrap.js"></script>
 
-    <script src="{{ site.baseurl }}/index_files/feather.js"></script><script src="{{ site.baseurl }}/index_files/Chart.js"></script><script src="{{ site.baseurl }}/index_files/dashboard.js"></script>
+    <script src="/index_files/feather.js"></script><script src="/index_files/Chart.js"></script><script src="/index_files/dashboard.js"></script>
   
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
 
 </body></html>

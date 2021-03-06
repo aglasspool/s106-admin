@@ -1,0 +1,15 @@
+---
+layout: default
+title: Schemes
+---
+<h1>Schemes</h1>
+
+<ul>
+  {% for scheme in site.schemes %}
+    <li>
+	    <h2><a href="{{ scheme.url }}">{{ scheme.name }}</a></h2>
+      <h3>{{ scheme.position }}</h3>
+      <p>{{ scheme.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
