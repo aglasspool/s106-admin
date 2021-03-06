@@ -168,6 +168,16 @@
     <script src="{{ site.baseurl }}/index_files/bootstrap.js"></script>
 
     <script src="{{ site.baseurl }}/index_files/feather.js"></script><script src="{{ site.baseurl }}/index_files/Chart.js"></script><script src="{{ site.baseurl }}/index_files/dashboard.js"></script>
-  
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>  
 
 </body></html>
