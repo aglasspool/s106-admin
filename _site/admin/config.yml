@@ -6,15 +6,36 @@ backend:
 media_folder: 'images'
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'schemes'
+      label: 'Completed Schemes'
+      label_singular: 'Scheme'
+      editor:
+          preview: false
+      delete: false
+      preview_path: 'scheme'
+      files:
+          - label: 'Schemes'
+            name: 'schemes'
+            file: '_data/schemes.json'
+            fields:
+                - label: Schemes
+                  name: schemes
+                  widget: list
+                  allow_add: true
+                  fields:
+                      - { label: 'Reference', name: 'reference', widget: 'string' }
+                      - label: 'Image'
+                        name: 'image'
+                        widget: 'object'
+                        fields:
+                            - { label: 'Photo', name: 'main', widget: 'image' }
+                            - { label: 'Photo Alt', name: 'alt', widget: 'image' }
+                      - { label: 'Description', name: 'description', widget: 'string' }
+                      - { label: 'Address', name: 'address', widget: 'string' }
+                      - { label: 'Completion date', name: 'completion', widget: 'string' }
+                      - label: 'Social Rent'
+                        name: 'social'
+                        widget: 'list'
+                        fields:
+                            - { label: 'Address', name: 'address', widget: 'string' }
+                            - { label: 'UPRN', name: 'uprn', widget: 'string' }
