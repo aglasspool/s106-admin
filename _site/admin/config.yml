@@ -16,7 +16,7 @@ collections:
       files:
           - label: 'Schemes'
             name: 'schemes'
-            file: '_data/schemes.json'
+            file: '../_data/schemes.json'
             fields:
                 - label: Schemes
                   name: schemes
